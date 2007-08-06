@@ -2,12 +2,12 @@
 %define module	Proc-ProcessTable
 %define name	perl-%{module}
 %define version	0.41
-%define release	1
+%define rel	2
 
 Summary:	Interface to process table information
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel %{release}
+Release:	%mkrel %{rel}
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}

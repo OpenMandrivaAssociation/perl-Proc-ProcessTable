@@ -13,6 +13,7 @@ Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
 Source0:	http://search.cpan.org/CPAN/authors/id/D/DU/DURIST/%{module}-%{version}.tar.bz2
 BuildRequires:	perl-devel
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This module is a first crack at providing a consistent interface to

@@ -1,7 +1,7 @@
 
 %define module	Proc-ProcessTable
 %define name	perl-%{module}
-%define version	0.44
+%define version	0.45
 %define rel	1
 
 Summary:	Interface to process table information

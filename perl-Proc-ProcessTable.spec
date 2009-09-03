@@ -1,17 +1,15 @@
+%define upstream_name	 Proc-ProcessTable
+%define upstream_version 0.45
 
-%define module	Proc-ProcessTable
-%define name	perl-%{module}
-%define version	0.45
-%define rel	1
-
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 2
 Summary:	Interface to process table information
-Name:		%{name}
-Version:	%{version}
-Release:	%mkrel %{rel}
 License:	GPL or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{module}
-Source0:	http://search.cpan.org/CPAN/authors/id/D/DU/DURIST/%{module}-%{version}.tar.bz2
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	http://www.cpan.org/modules/by-module/Proc/%{upstream_name}-%{upstream_version}.tar.bz2
+Patch:      Proc-ProcessTable-0.45-fix-format-errors.patch
 BuildRequires:	perl-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
@@ -27,7 +25,8 @@ from within a perl or shell script and parsing the output was not a
 very efficient or aesthetic way to do things.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
+%patch -p 1
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor

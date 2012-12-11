@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:	4
+Release:    4
 Summary:	Interface to process table information
 License:	GPL or Artistic
 Group:		Development/Perl
@@ -45,4 +45,53 @@ rm -rf %{buildroot}
 %{perl_vendorarch}/Proc
 %{perl_vendorarch}/auto/Proc
 %{_mandir}/*/*
+
+
+
+%changelog
+* Tue Jul 20 2010 Jérôme Quelin <jquelin@mandriva.org> 0.450.0-3mdv2011.0
++ Revision: 556098
+- rebuild for perl 5.12
+
+* Thu Sep 03 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.450.0-2mdv2010.0
++ Revision: 429000
+- fix format errors
+- new perl version macro
+
+* Thu Sep 11 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.45-1mdv2009.0
++ Revision: 283734
+- update to new version 0.45
+
+* Sun Aug 10 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.44-1mdv2009.0
++ Revision: 270395
+- update to new version 0.44
+
+* Sat Jul 19 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.43-1mdv2009.0
++ Revision: 238725
+- update to new version 0.43
+
+* Sun Jan 27 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.42-1mdv2008.1
++ Revision: 158622
+- update to new version 0.42
+
+* Mon Jan 14 2008 Pixel <pixel@mandriva.com> 0.41-3mdv2008.1
++ Revision: 151411
+- rebuild for perl-5.10.0
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Mon Aug 06 2007 Anssi Hannula <anssi@mandriva.org> 0.41-2mdv2008.0
++ Revision: 59414
+- annual rebuild
+
+
+* Sun Jul 09 2006 Emmanuel Andry <eandry@mandriva.org> 0.41-1mdv2007.0
+- 0.41
+
+* Fri Dec 23 2005 Anssi Hannula <anssi@mandriva.org> 0.40-1mdk
+- initial Mandriva package
 

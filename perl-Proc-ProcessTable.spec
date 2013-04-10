@@ -1,17 +1,16 @@
-%define upstream_name	 Proc-ProcessTable
+%define upstream_name Proc-ProcessTable
 %define upstream_version 0.45
 
-Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    4
+Name:		perl-%{upstream_name}
+Version:	%perl_convert_version %{upstream_version}
+Release:	5
 Summary:	Interface to process table information
 License:	GPL or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Proc/%{upstream_name}-%{upstream_version}.tar.bz2
-Patch:      Proc-ProcessTable-0.45-fix-format-errors.patch
+Patch:		Proc-ProcessTable-0.45-fix-format-errors.patch
 BuildRequires:	perl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This module is a first crack at providing a consistent interface to
@@ -33,14 +32,9 @@ very efficient or aesthetic way to do things.
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc README README.linux Changes TODO contrib example.pl
 %{perl_vendorarch}/Proc
 %{perl_vendorarch}/auto/Proc

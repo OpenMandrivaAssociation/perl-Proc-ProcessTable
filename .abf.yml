@@ -1,2 +1,4 @@
+removed_sources:
+  Proc-ProcessTable-0.45.tar.bz2: 56dd8751217ea4a0499d971214ed8fb9ca4eed2c
 sources:
-  "Proc-ProcessTable-0.45.tar.bz2": 56dd8751217ea4a0499d971214ed8fb9ca4eed2c
+  Proc-ProcessTable-0.48.tar.gz: 43a6ae9f8d84a35f6c9510e015ce12804cb69856

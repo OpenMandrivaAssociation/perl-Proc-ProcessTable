@@ -1,9 +1,9 @@
 %define upstream_name Proc-ProcessTable
-%define upstream_version 0.45
+%define upstream_version 0.48
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Release:	1
 Summary:	Interface to process table information
 License:	GPL or Artistic
 Group:		Development/Perl

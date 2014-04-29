@@ -10,7 +10,6 @@ License:	GPL or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Proc/%{upstream_name}-%{upstream_version}.tar.gz
-Patch:		Proc-ProcessTable-0.45-fix-format-errors.patch
 BuildRequires:	perl-devel
 
 %description
@@ -26,7 +25,6 @@ very efficient or aesthetic way to do things.
 
 %prep
 %setup -q -n %{upstream_name}-%{upstream_version}
-%patch -p 1
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor

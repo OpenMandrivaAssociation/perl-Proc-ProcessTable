@@ -34,7 +34,7 @@ very efficient or aesthetic way to do things.
 %make_install
 
 %files
-%doc README README.linux Changes TODO contrib example.pl
+%doc README README.linux Changes contrib
 %{perl_vendorarch}/Proc
 %{perl_vendorarch}/auto/Proc
 %{_mandir}/*/*

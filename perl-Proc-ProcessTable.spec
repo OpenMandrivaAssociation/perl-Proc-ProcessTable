@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	1
+Release:	2
 Summary:	Interface to process table information
 
 License:	GPL or Artistic
@@ -38,7 +38,3 @@ very efficient or aesthetic way to do things.
 %{perl_vendorarch}/Proc
 %{perl_vendorarch}/auto/Proc
 %{_mandir}/*/*
-
-
-
-

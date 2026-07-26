@@ -1,15 +1,13 @@
 %define upstream_name Proc-ProcessTable
-%define upstream_version 0.637
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.637
+Release:	2
 Summary:	Interface to process table information
 
 License:	GPL or Artistic
 Group:		Development/Perl
 Url:		https://github.com/jwbargsten/perl-proc-processtable
-Source0:	https://cpan.metacpan.org/authors/id/J/JW/JWB/Proc-ProcessTable-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/J/JW/JWB/Proc-ProcessTable-%{version}.tar.gz
 BuildRequires:	make
 BuildRequires:	perl-devel
 
@@ -25,7 +23,7 @@ from within a perl or shell script and parsing the output was not a
 very efficient or aesthetic way to do things.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor

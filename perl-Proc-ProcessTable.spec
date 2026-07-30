@@ -2,7 +2,7 @@
 %define upstream_version 0.637
 Name:		perl-%{upstream_name}
 Version:	0.637
-Release:	1
+Release:	2
 Summary:	Interface to process table information
 
 License:	GPL or Artistic
@@ -24,7 +24,7 @@ from within a perl or shell script and parsing the output was not a
 very efficient or aesthetic way to do things.
 
 %prep
-%setup -q -n %{upstream_name}-%{version}
+%setup -q -n Proc-ProcessTable-0.637
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor

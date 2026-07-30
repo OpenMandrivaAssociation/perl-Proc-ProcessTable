@@ -1,13 +1,14 @@
 %define upstream_name Proc-ProcessTable
+%define upstream_version 0.637
 Name:		perl-%{upstream_name}
 Version:	0.637
-Release:	2
+Release:	1
 Summary:	Interface to process table information
 
 License:	GPL or Artistic
 Group:		Development/Perl
 Url:		https://github.com/jwbargsten/perl-proc-processtable
-Source0:	https://cpan.metacpan.org/authors/id/J/JW/JWB/Proc-ProcessTable-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/J/JW/JWB/Proc-ProcessTable-0.637.tar.gz
 BuildRequires:	make
 BuildRequires:	perl-devel
 

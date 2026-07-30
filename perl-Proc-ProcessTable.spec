@@ -2,7 +2,7 @@
 %define upstream_version 0.637
 Name:		perl-%{upstream_name}
 Version:	0.637
-Release:	2
+Release:	3
 Summary:	Interface to process table information
 
 License:	GPL or Artistic
@@ -27,7 +27,7 @@ very efficient or aesthetic way to do things.
 %setup -q -n Proc-ProcessTable-0.637
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make_build
 
 %install

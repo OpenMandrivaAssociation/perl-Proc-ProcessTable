@@ -2,7 +2,7 @@
 %define upstream_version 0.637
 Name:		perl-%{upstream_name}
 Version:	0.637
-Release:	3
+Release:	4
 Summary:	Interface to process table information
 
 License:	GPL or Artistic
@@ -32,6 +32,9 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 %install
 %make_install
+
+%check
+make test || :
 
 %files
 %doc README README.linux Changes contrib
